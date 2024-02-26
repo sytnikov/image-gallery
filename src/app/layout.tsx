@@ -1,5 +1,12 @@
-import "./globals.css";
+import { Rubik } from "next/font/google";
 import type { Metadata } from "next";
+
+import "./globals.css";
+import Navbar from "@/components/Navbar";
+
+export const revalidate = 10
+
+const rubik = Rubik({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Next.js Image Gallery",
@@ -14,7 +21,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className={rubik.className}>
+        <Navbar />
         <main className="max-w-6xl mx-auto">
           {children}
         </main>
