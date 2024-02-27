@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 
-export const revalidate = 10
+export const revalidate = 100
 
 const rubik = Rubik({ subsets: ["latin"] });
 
