@@ -3,6 +3,7 @@ import addBlurredDataUrls from "@/lib/getBase64";
 import { ImagesResults } from "@/models/Images";
 import ImgContainer from "./ImgContainer";
 import getPrevNextPages from "@/lib/getPrevNextPages";
+import Footer from "./Footer";
 
 type Props = {
   topic?: string | undefined;
@@ -30,7 +31,7 @@ export default async function Gallery({ topic = "curated", page }: Props) {
 
   const { prevPage, nextPage } = getPrevNextPages(images)
 
-  const footerProps = { topic, page, prevPage, nextPage }
+  const footerProps = { topic, page, prevPage, nextPage}
 
   return (
     <>
@@ -39,7 +40,7 @@ export default async function Gallery({ topic = "curated", page }: Props) {
           <ImgContainer key={photo.id} photo={photo} />
         ))}
       </section>
-      {/* Add footer */}
+      <Footer {...footerProps} />
     </>
   );
 }
