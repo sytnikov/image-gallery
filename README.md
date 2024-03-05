@@ -8,12 +8,12 @@ Check out the live version of the [Image Gallery](https://gallery.sytnikov.dev/)
 
 ## Features
 
-[x] curated picture display from Pexels
-[x] search bar
-[x] advanced picture loading
-[x] pagination
-[x] custom grid layout
-[x] advanced animations
+- curated picture display from Pexels
+- search bar
+- advanced picture loading
+- pagination
+- custom grid layout
+- advanced animations
 
 ## Getting Started
 
