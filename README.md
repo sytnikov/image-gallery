@@ -17,13 +17,15 @@ Check out the live version of the [Image Gallery](https://gallery.sytnikov.dev/)
 
 ## Getting Started
 
-Run the development server:
+1. Create .env.local file in the root folder and add your own PEXELS_API_KEY
+
+2. Run the development server:
 
 ```bash
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result in the development mode.
+3. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result in the development mode.
 
 ## Usage
 
