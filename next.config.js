@@ -8,8 +8,10 @@ const nextConfig = {
         port: "",
         pathname: "/photos/**"
       }
-    ]
-  }
+    ],
+    unoptimized: true,
+  },
+  
 }
 
 module.exports = nextConfig
